@@ -12,7 +12,7 @@ def organize_dataset(metadata_path, source_dir, output_dir):
 
     # Create train/test directories for each label
     for split in ['train', 'test']:
-        for label in range(10):  # adjust based on total number of classes
+        for label in range(20):  # adjust based on total number of classes
             ensure_dir(os.path.join(output_dir, split, str(label)))
 
     # Move files
